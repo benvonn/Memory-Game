@@ -1,0 +1,113 @@
+html {
+  margin: auto;
+
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family:'Arial Narrow Bold';
+  font-size: 250%;
+}
+p {
+  font-family: 'Arial Narrow Bold';
+  font-weight: bold;
+  font-size: 150%;
+  justify-content: start;
+  display: flex;
+
+}
+
+.Top-Bun-Position{
+  display: flex;
+  justify-content: center;
+}
+
+.Patties {
+  display: flex;
+  justify-content: center;
+}
+
+
+.Bunns{
+  display: flex;
+  justify-content: center;
+}
+.semi-circle {
+  width: 140px;
+  height: 80px;
+  background-color: #fdbc5b;
+  border-radius: 10rem 10rem 0 0;
+
+}
+
+.bottom-bun {
+  width: 140px;
+  height: 40px;
+  background-color: #fdbc5b;
+  border-radius: 10rem;
+
+}
+
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+.actions button{
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px(2*3)));
+}
+.card {
+
+  height: calc(140px(2*3));
+  width: 140px;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.front-image {
+  width: 60px;
+  height: 60px;
+}
+.card .flipped {
+  transform: rotateY(180deg);
+}
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back {
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
+
+}
+.front .back {
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
